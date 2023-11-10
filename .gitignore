@@ -27,3 +27,6 @@ coverage
 *.sln
 *.sw?
 visualizer.html
+
+# Edgio generated build directory
+.edgio
