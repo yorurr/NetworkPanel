@@ -1,14 +1,17 @@
 {
-  "name": "network-panel",
-  "version": "0.0.0",
-  "private": true,
   "scripts": {
+    "edgio:dev": "edgio dev",
+    "edgio:build": "edgio build",
+    "edgio:deploy": "edgio deploy",
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false"
   },
+  "name": "network-panel",
+  "version": "0.0.0",
+  "private": true,
   "dependencies": {
     "@soerenmartius/vue3-clipboard": "^0.1.2",
     "echarts": "^5.4.3",
@@ -17,6 +20,12 @@
     "vue": "^3.3.4"
   },
   "devDependencies": {
+    "@edgio/cli": "^7.4.0",
+    "@edgio/core": "^7.4.0",
+    "@edgio/devtools": "^7.4.0",
+    "@edgio/prefetch": "^7.4.0",
+    "@edgio/vue": "^7.4.0",
+    "@edgio/vue-cva": "^7.4.0",
     "@tsconfig/node18": "^18.2.2",
     "@types/node": "^18.17.15",
     "@vitejs/plugin-vue": "^4.3.4",
